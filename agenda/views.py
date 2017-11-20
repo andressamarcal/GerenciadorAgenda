@@ -1,6 +1,9 @@
 #-*- encoding: utf-8 -*-
 
 from django.http import HttpResponse
+from models import ItemAgenda
 
-def index(request):
-	return HttpResponse(u"Olá Mundo")
+def lista(request):
+	lista_itens = ItemAgenda.objects.all()
+	return render_to_response("lista.html", {'lista_itens':lista_itens})
+
