@@ -7,8 +7,9 @@ from django.conf.urls.defaults import *
 urlpatterns = patterns('',
     # Example:
     (r'^$', "agenda.views.lista"),
+    (r'^adiciona/$', "agenda.views.adiciona"),
 
-    # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
+    # Uncomment the admin/doc line below and add 'django.contrib.admindocs'
     # to INSTALLED_APPS to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
